@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/tree"
+    tools:context="com.example.asus.cattree.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/webview_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:text="浏览器"
+            android:background="#f00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/webview"
+            android:background="@mipmap/webview"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:text="WEB"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/map_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/webview_layout">
+        <TextView
+            android:text="定位"
+            android:background="#f00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/map"
+            android:background="@mipmap/map"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/photo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map_layout"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:text="拍照"
+            android:background="#f00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/photo"
+            android:background="@mipmap/photo"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
